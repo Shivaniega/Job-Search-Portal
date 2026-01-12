@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile - Job Portal</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Reset some basic styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Global body styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #e0f7fa;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        /* Header styling */
+        header {
+            background: linear-gradient(90deg, #007BFF, #00BFFF);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        /* Profile container */
+        .profile-container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        /* Profile details */
+        .profile-details {
+            margin-bottom: 20px;
+        }
+
+        .profile-details h2 {
+            font-size: 2rem;
+            color: #007BFF;
+            margin-bottom: 10px;
+        }
+
+        .profile-details p {
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+        }
+
+        /* Job applications section */
+        .job-applications {
+            margin-top: 30px;
+        }
+
+        .job-applications h3 {
+            font-size: 1.8rem;
+            color: #FF6F61;
+            margin-bottom: 15px;
+        }
+
+        .application {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 10px;
+            transition: box-shadow 0.3s;
+        }
+
+        .application:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .application h4 {
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .application p {
+            font-size: 1rem;
+            color: #666;
+        }
+
+        /* Button styling */
+        .edit-button, .back-button {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s;
+            margin-top: 10px; /* Add some space above the button */
+        }
+
+        .edit-button:hover, .back-button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Footer styling */
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>User Profile</h1>
+    </header>
+
+    <div class="profile-container">
+        <div class="profile-details">
+            <h2>Profile Information</h2>
+            <p><strong>Name:</strong> John Doe</p>
+            <p><strong>Email:</strong> johndoe@example.com</p>
+            <p><strong>Phone:</strong> (123) 456-7890</p>
+            <p><strong>Location:</strong> New York, NY</p>
+            <button class="edit-button" onclick="window.location.href='editpro.html'">Edit Profile</button>
+            <button class="back-button" onclick="window.location.href='homepage2.html'">Back to Homepage</button>
+        </div>
+
+        <div class="job-applications">
+            <h3>Job Applications</h ```html
+            <h3>Job Applications</h3>
+            <div class="application">
+                <h4>Web Developer</h4>
+                <p><strong>Status:</strong> Applied</p>
+                <p><strong>Date:</strong> January 15, 2025</p>
+            </div>
+            <div class="application">
+                <h4>Graphic Designer</h4>
+                <p><strong>Status:</strong> Interview Scheduled</p>
+                <p><strong>Date:</strong> January 20, 2025</p>
+            </div>
+            <div class="application">
+                <h4>Data Analyst</h4>
+                <p><strong>Status:</strong> Offer Received</p>
+                <p><strong>Date:</strong> January 25, 2025</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Job Portal</p>
+    </footer>
+</body>
+</html>

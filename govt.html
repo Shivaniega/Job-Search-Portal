@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <style>
+    /* Reset some basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e5ff72;
+    color: #d44e4e;
+}
+
+/* Header Styling */
+header {
+    background-color: #3498db; /* Blue color */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #f39c12; /* Hover color: orange */
+}
+
+/* Job Listings Section */
+#job-listings {
+    padding: 40px 20px;
+    background-color: #ffffff;
+}
+
+#job-listings h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #2c3e50; /* Dark grey */
+    margin-bottom: 40px;
+}
+
+.job-card {
+    background-color: #ecf0f1; /* Light grey background */
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.job-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+.job-card h3 {
+    font-size: 1.8rem;
+    color: #3498db; /* Blue for the job title */
+    margin-bottom: 10px;
+}
+
+.job-card p {
+    font-size: 1.1rem;
+    color: #7f8c8d; /* Grey for the description and location */
+    margin-bottom: 15px;
+}
+
+.job-card .apply-btn {
+    background-color: #f39c12; /* Orange button */
+    color: white;
+    font-size: 1.1rem;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.job-card .apply-btn:hover {
+    background-color: #ec1426; /* Darker orange on hover */
+}
+.back-button {
+            background-color: #3498db; /* Blue */
+            color: white;
+            font-size: 1.1rem;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 20px;
+        }
+
+        .back-button:hover {
+            background-color: #2980b9; /* Darker blue on hover */
+        }
+
+/* Footer Styling */
+footer {
+    background-color: #0cc1ee; /* Dark grey footer */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    #job-listings h2 {
+        font-size: 2rem;
+    }
+
+    .job-card {
+        padding: 15px;
+    }
+
+    .job-card .apply-btn {
+        padding: 10px 20px;
+    }
+}
+
+  </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Government Job Openings</title>
+</head>
+<body>
+    <section id="job-listings">
+        <div class="container">
+            <h2>Current Government Job Openings</h2>
+
+            <!-- Job 1 -->
+            <div class="job-card">
+                <h3>Police Officer</h3>
+                <p><strong>Location:</strong> California</p>
+                <p><strong>Deadline:</strong> March 15, 2025</p>
+                <p><strong>Description:</strong> Join the state’s law enforcement to serve and protect your community.</p>
+                <a href="apply.html"><button class="apply-btn">Apply Now</button></a>
+            </div>
+
+            <!-- Job 2 -->
+            <div class="job-card">
+                <h3>Administrative Assistant</h3>
+                <p><strong>Location:</strong> New York</p>
+                <p><strong>Deadline:</strong> February 20, 2025</p>
+                <p><strong>Description:</strong> Support government departments by handling administrative tasks and coordinating office operations.</p>
+                <a href="apply.html"><button class="apply-btn">Apply Now</button></a>
+            </div>
+
+            <!-- Job 3 -->
+            <div class="job-card">
+                <h3>Software Engineer</h3>
+                <p><strong>Location:</strong> Remote</p>
+                <p><strong>Deadline:</strong> April 10, 2025</p>
+                <p><strong>Description:</strong> Develop and maintain government software systems, ensuring their efficiency and security.</p>
+                <a href="apply.html"><button class="apply-btn">Apply Now</button></a>
+            </div>
+        </div>
+    </section>
+<center><button class="back-button" onclick="window.location.href='homepage2.html'">Back to Homepage</button></center>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Government Job Portal. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

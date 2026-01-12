@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Portal Dashboard</title>
+    <style>
+        /* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.dashboard-container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Sidebar styles */
+.sidebar {
+    width: 250px;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    height: 100%;
+    position: fixed;
+}
+
+.sidebar .logo h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.nav-links ul {
+    list-style: none;
+}
+
+.nav-links ul li {
+    margin: 20px 0;
+}
+
+.nav-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.nav-links ul li a:hover {
+    color: #00b3ff;
+}
+
+/* Main content area */
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    font-size: 2rem;
+}
+
+.user-info p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/* Stats Section */
+.stats {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.stat-card {
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 30%;
+    border-radius: 8px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.stat-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.stat-card p {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Job Listings Section */
+.job-listings {
+    margin-top: 30px;
+}
+
+.job-card {
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.job-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.job-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.job-card p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.job-card .apply-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.job-card .apply-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .dashboard-container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .main-content {
+        margin-left: 0;
+    }
+
+    .stats {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stat-card {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .job-card {
+        width: 80%;
+        margin: 0 auto 20px auto;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <h2>JobPortal</h2>
+            </div>
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="/alljobs">Job Listings</a></li>
+                    <li><a href="#">Applied Jobs</a></li>
+                    <li><a href="userp.html">Profile</a></li>
+                    <li><a href="#">Settings</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header Section -->
+            <header class="header">
+                <h1>Welcome</h1>
+                <div class="user-info">
+                    <p>Account: <strong>Active</strong></p>
+                    <p>Role: <strong>Job Seeker</strong></p>
+                </div>
+            </header>
+
+            <!-- Quick Stats Section -->
+            <section class="stats">
+                <div class="stat-card">
+                    <h3>Total Jobs Applied</h3>
+                    <p>10</p>
+                </div>
+                <div class="stat-card">
+                <h3>Job Listings</h3>
+                    <p>120</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Saved Jobs</h3>
+                    <p>5</p>
+                </div>
+            </section>
+
+            <!-- Job Listings Section -->
+            <section class="job-listings">
+                <h2>Recent Job Listings</h2>
+                <div class="job-card">
+                    <h3>Software Engineer</h3>
+                    <p><strong>Company:</strong> XYZ Corp</p>
+                    <p><strong>Location:</strong> New York, USA</p>
+                    <a href="apply.html"><button class="apply-btn">Apply Now</button></a>
+                </div>
+                <div class="job-card">
+                    <h3>Data Analyst</h3>
+                    <p><strong>Company:</strong> ABC Tech</p>
+                    <p><strong>Location:</strong> Remote</p>
+                    <a href="apply.html"><button class="apply-btn">Apply Now</button></a>
+                </div>
+                <div class="job-card">
+                    <h3>Web Developer</h3>
+                    <p><strong>Company:</strong> Web Solutions</p>
+                    <p><strong>Location:</strong> San Francisco, USA</p>
+                    <a href="apply.html"><button class="apply-btn">Apply Now</button></a>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
